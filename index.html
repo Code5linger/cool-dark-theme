@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Theme</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="mode-tog"></div>
+    <div class="container">
+        <div class="dark-mode"></div>
+    </div>
+
+    <h1>DARK MODE</h1>
+
+    <script>
+        let modeToggle = document.querySelector('.mode-tog');
+        let darkMode = document.querySelector('.dark-mode');
+
+        modeToggle.addEventListener('mouseenter', () => {
+            darkMode.classList.add('active');
+            modeToggle.classList.add('active');
+        });
+
+        modeToggle.addEventListener('mouseleave', () => {
+            darkMode.classList.remove('active');
+            modeToggle.classList.remove('active');
+        });
+
+    </script>
+</body>
+
+</html>
